@@ -1,12 +1,21 @@
 import { Marker, Popup } from 'react-leaflet';
 import { Link } from 'react-router-dom';
+import { Icon } from 'leaflet';
 import locations from '../data/locations';
+
+// Criando um ícone personalizado
+const markerIcon = new Icon({
+    iconUrl: "/images/marker-icon.png", // Caminho do ícone dentro de "public/"
+    iconSize: [22, 32], // Tamanho do ícone
+    iconAnchor: [16, 32], // Centraliza o ícone corretamente
+    popupAnchor: [0, -32], // Ajusta a posição do popup
+  });
 
 const MarkerList: React.FC = () => {
   return (
     <>
       {locations.map((place, index) => (
-        <Marker key={index} position={place.coordinates}>
+        <Marker key={index} position={place.coordinates} icon={markerIcon}>
           <Popup>
             <div>
               <h3>{place.name}</h3>

@@ -13,7 +13,7 @@ export type Location = {
   const locations: Location[] = [
     {
       name: "Cachoeira Santa Bárbara",
-      coordinates: [-13.8165, -47.4356],
+      coordinates: [-13.539808493079663, -47.49320887976748],
       description: "Uma das cachoeiras mais famosas da Chapada, conhecida por suas águas azul-turquesa.",
       difficulty: "Fácil",
       duration: "40 min de trilha",
@@ -28,7 +28,7 @@ export type Location = {
     },
     {
       name: "Cachoeira dos Couros",
-      coordinates: [-14.1331, -47.6892],
+      coordinates: [-14.278191634008092, -47.75794894074043],
       description: "Conjunto de quedas d'água impressionantes, ótimo para contemplação e banho.",
       difficulty: "Moderado",
       duration: "1h de trilha",
@@ -43,7 +43,7 @@ export type Location = {
     },
     {
       name: "Vale da Lua",
-      coordinates: [-14.1746, -47.8147],
+      coordinates: [-14.186606865030745, -47.78916247921409],
       description: "Formações rochosas únicas esculpidas pela água, lembrando a superfície lunar.",
       difficulty: "Fácil",
       duration: "20 min de caminhada",
